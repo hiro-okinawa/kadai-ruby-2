@@ -1,20 +1,17 @@
-
-
-def fizzbuzz
-  num = 1
-  num_max = 100
-  while num <= num_max do
+def fizzbuzz(num)
     if num % 3 == 0 && num % 5 == 0
-      puts "FizzBuzz"
+      return "FizzBuzz"
     elsif num % 3 == 0
-      puts "Fizz"
+      return "Fizz"
     elsif num % 5 == 0
-      puts "Buzz"
+      return "Buzz"
     else 
-      puts num
+      return num
     end 
-    num += 1
-  end
 end
-
-puts fizzbuzz
+num = 1
+num_max = 100
+while num <= num_max do
+  puts fizzbuzz(num)
+  num += 1
+end
